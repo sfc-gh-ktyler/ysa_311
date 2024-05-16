@@ -153,8 +153,8 @@ if find_my_uni_record:
 
 
 	# Set uni_id and key to entries on form
-	st.session_state['uni_id'] = uni_id
-	st.session_state['uni_uuid'] = uni_uuid
+	st.session_state['uni_id'] = uni_id.strip()
+	st.session_state['uni_uuid'] = uni_uuid.strip()
 
 	# session = Session.builder.configs(st.session_state.sf_params).create()    
 	cnx = snowflake.connector.connect(
