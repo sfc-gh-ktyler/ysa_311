@@ -1,0 +1,11 @@
+[Unit]
+Description=Streamlit Service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/snow-amazing
+ExecStart=/home/ubuntu/snow-amazing/venv/bin/streamlit run 🏆_Snow_Amazing_Home_Page.py
+
+[Install]
+WantedBy=multi-user.target
