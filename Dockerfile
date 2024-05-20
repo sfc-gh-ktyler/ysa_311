@@ -9,9 +9,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone https://github.com/sfc-gh-ktyler/ysa.git .
 
-RUN pip3 install streamlit
-RUN pip3 install boto3
-RUN pip3 install snowflake-connector-python
+RUN pip install -r requirements.txt
 
 EXPOSE 8501
 
