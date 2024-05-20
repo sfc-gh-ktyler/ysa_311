@@ -1,3 +1,5 @@
+FROM python:3.11
+
 WORKDIR /snow-amazing
 
 RUN apt-get update && apt-get install -y \
