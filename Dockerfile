@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/sfc-gh-ktyler/ysa.git .
+RUN git clone https://github.com/sfc-gh-ktyler/ysa_spc.git .
 
 RUN pip install -r requirements.txt
 
