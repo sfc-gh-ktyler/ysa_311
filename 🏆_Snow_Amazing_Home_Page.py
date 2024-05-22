@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-import boto3
-import json
-import botocore
-from botocore.exceptions import ClientError
+# import boto3
+# import json
+# import botocore
+# from botocore.exceptions import ClientError
 import snowflake.connector
 import time
 
